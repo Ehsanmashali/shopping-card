@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Helper Function
-
-import { shorten } from "../helper/fuctions";
+import { shorten } from "../../helper/fuctions";
 
 const Product = ({ productData }) => {
   return (
@@ -10,7 +10,7 @@ const Product = ({ productData }) => {
       <img src={productData.image} alt="product" style={{ width: "200px" }} />
       <h3>{shorten(productData.title)}</h3>
       <div>
-        <a href="/#">Details</a>
+        <Link to={`/product/${productData.id}`}>Details</Link>
         <button>Add to cart</button>
       </div>
     </div>
@@ -18,4 +18,3 @@ const Product = ({ productData }) => {
 };
 
 export default Product;
-
