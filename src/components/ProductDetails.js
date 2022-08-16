@@ -23,7 +23,7 @@ const ProductDetails = () => {
         </p>
         <div>
           <span>{price} $</span>
-          <Link to="/product">Back to Shop</Link>
+          <Link to="/products">Back to Shop</Link>
         </div>
       </div>
     </div>
