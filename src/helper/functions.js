@@ -9,7 +9,7 @@ const isInCart = (state, id) => {
   return result;
 };
 
-const quantityCounter = (state, id) => {
+const quantityCount = (state, id) => {
   const index = state.selectedItems.findIndex((item) => item.id === id);
   if (index === -1) {
     return false;
@@ -18,4 +18,4 @@ const quantityCounter = (state, id) => {
   }
 };
 
-export { shorten, isInCart, quantityCounter };
+export { shorten, isInCart, quantityCount };
